@@ -13,27 +13,27 @@
     <div class="container" id="GameContainer" style="display:none;">
         <div class="row" style="border-width: 5px;border-style: solid;background: #ff0000;">
             <div class="col">
-                <h1 style="text-align: center;">Category</h1>
+                <h1 style="text-align: center;" id="TurnCategory">Category</h1>
             </div>
         </div>
         <div class="row" style="border-width: 5px;border-style: solid;background: #0029ff;">
             <div class="col">
-                <h1 style="text-align: center;">Word</h1>
+                <h1 style="text-align: center;" id="WordDisplay">Word</h1>
             </div>
         </div>
-        <div class="row" style="border-width: 5px;border-style: solid;border-bottom-width: 0px;">
-            <div class="col" style="background: #ffe500;text-align: center;">
+        <div class="row" style="border-width: 5px;border-style: solid;border-bottom-width: 0px;height: 400px;">
+            <div class="col" style="background: #ffe500;text-align: center;" onclick="fnSkip()">
                 <h1>Skip</h1>
                 <p style="text-align: center;">Paragraph</p>
             </div>
-            <div class="col" style="background: #14ff00;">
+            <div class="col" style="background: #14ff00;" onclick="fnNext()">
                 <h1 style="text-align: center;">Next</h1>
-                <p style="text-align: center;">Paragraph</p>
+                <p style="text-align: center;" id="WordList">Paragraph</p>
             </div>
         </div>
         <div class="row" style="border-width: 5px;border-style: solid;">
             <div class="col" style="background: #9c5778;border-width: 5px;">
-                <h1 style="text-align: center;">Turn Score</h1>
+                <h1 style="text-align: center;" id="TurnScoreDisplay">Turn Score</h1>
             </div>
         </div>
     </div>
@@ -47,23 +47,23 @@
             <div class="col" style="background: #ad4c4c;" onclick="fnPeople()">
                 <p>People</p>
             </div>
-            <div class="col" style="background: #ff9191;">
+            <div class="col" style="background: #ff9191;"onclick="fnNature()">
                 <p>Nature</p>
             </div>
         </div>
         <div class="row" style="border-width: 5px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;">
-            <div class="col" style="background: #346bac;">
+            <div class="col" style="background: #346bac;"onclick="fnObject()">
                 <p>Object</p>
             </div>
-            <div class="col" style="background: #e8ec3a;">
+            <div class="col" style="background: #e8ec3a;"onclick="fnAction()">
                 <p>Action</p>
             </div>
         </div>
         <div class="row" style="border-width: 5px;border-style: solid;border-top-width: 0px;">
-            <div class="col" style="background: #798696;">
+            <div class="col" style="background: #798696;"onclick="fnRandom()">
                 <p>Random</p>
             </div>
-            <div class="col" style="background: #616317;">
+            <div class="col" style="background: #616317;"onclick="fnWorld()">
                 <p>World</p>
             </div>
         </div>
