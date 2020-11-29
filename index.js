@@ -115,7 +115,7 @@ function fnSelect() {
 
     }
     function fnObject() {
-        Category = "Object";
+        Category = "Objects";
         fnSelect();
 
     }
